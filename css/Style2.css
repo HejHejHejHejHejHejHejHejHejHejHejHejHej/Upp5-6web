@@ -1,0 +1,147 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    background: linear-gradient(0deg, rgb(100, 61, 61), rgb(113, 74, 74));
+}
+ul{
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+.bold{
+    font-weight: bold;
+}
+header{
+    border-radius:0px 0px 20px 20px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    justify-content: space-between;
+    padding: 0.4rem 1rem;
+    background-image: url("/Img/page_bg_raw.jpg")
+}
+main{
+    text-align: center;
+}
+footer{
+    background-color: rgb(150, 135, 135);
+    padding:1rem;
+}
+h1, h2, h3{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    
+}
+h1{
+    font-size: 2.5rem ;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-decoration-thickness:0.15rem ;
+}
+h2{
+    font-size: 1.78rem ;
+}
+h3{
+    font-weight: 625 ;
+    font-size: 1.3rem ;
+}
+p{
+    text-align: left;
+    padding: 0.8rem;
+    max-width: 100ch;
+
+}
+nav a.nav-link, a.nav-link:visited{
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+}
+a.nav-link:hover{
+    color: red;
+    text-decoration: none;
+}
+a.nav-link:active{
+    color:rgb(109, 12, 12);
+}
+a:link{
+    color:blue;
+}
+a:visited{
+    color:blueviolet;
+}
+a:hover{
+    color:rgb(89, 89, 255);
+}
+img{
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+    color: gray;
+    font-style: italic;
+}
+.top-aligned-image{
+    max-width: 9rem;
+    vertical-align: top;
+    float: left;
+    margin: 0rem 0.5rem 0rem 0rem;
+}
+.block-image{
+    max-width: 13rem;
+    display: block;
+    margin: 0.5rem;
+    padding: 0.3rem;
+    background: linear-gradient(180deg, black, rgb(108, 69, 69));
+}
+.rounded{
+    border-radius: 1rem;
+}
+.card{
+    display: flex;
+    margin: 0.5rem;
+    background: linear-gradient(45deg, black, rgb(113, 74, 74), rgb(113, 74, 74));
+    transition: padding-right 0.4s ease-in-out;
+}
+.card:hover{
+    transition: box-shadow 250ms ease-in-out;
+    box-shadow: 4px 4px 10px;
+}
+.footer{
+    padding: 0;
+}
+.video{
+    width: 320px;
+    height: 180px;
+    vertical-align: top;
+    float: left;
+    margin: 0.5rem;
+    transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
+}
+.flex-row{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    transition: transform 0.4s ease-out;
+}
+@media screen and (min-width: 1000px){
+    .media-1{
+        transform:translateX(-10%)
+    }
+    .media-2{
+        transform: translateX(-15%);
+    }
+    .translateX-10{
+        flex-grow: 0.4;
+    }
+    .translateX-15{
+        flex-grow: 0.3;
+    }
+    .video{
+        width: 480px;
+        height: 270px;
+    }
+}
+.center-left-text {
+    display: flex;
+    justify-content: center;
+}
